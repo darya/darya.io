@@ -21,7 +21,7 @@
 					<h1>
 						<span class="alternate">D</span>ary<span class="alternate">a</span>
 					</h1>
-					<div class="circle"><h1>Darya</h1></div>
+					<div class="circle"></div>
 				</div>
 				
 				<h2>PHP Framework</h2>

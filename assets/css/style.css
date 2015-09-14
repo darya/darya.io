@@ -8,21 +8,6 @@ h4 {
 	margin-top: 16px;
 }
 
-body.collapse-header .navbar.darya {
-	/*margin-top: -6em;*/
-	position: fixed;
-	background: #fff;
-	transform: translate(0, -6em);
-}
-
-body.collapse-header header.darya {
-	margin-bottom: -8.1em;
-}
-
-body.collapse-header .content {
-	margin-top: 14em;
-}
-
 .content {
 	margin-top: 20em;
 	transition: margin-top 0.5s;
@@ -41,7 +26,7 @@ body.collapse-header .content {
 }
 
 header.darya {
-	transition: margin-bottom 0.5s;
+	transition: transform 0.5s;
 	margin-bottom: 0em;
 }
 
@@ -51,25 +36,18 @@ header.darya .logo {
 }
 
 header.darya .circle {
-	top: 4em;
-	position: absolute;
 	left: 50%;
-	/*margin-left: -5.5em;*/
-	margin-bottom 0em;
-	transform: translate(-5.05em);
+	width: 4em;
+	height: 4em;
+	top: -0.8em;
 	z-index: -1;
-}
-
-header.darya .circle h1 {
-	color: transparent;
+	font-size: 2.5em;
+	margin-bottom 0em;
+	position: absolute;
 	border-radius: 50%;
 	background: #5C3F7B;
-	font-size: 2.5em;
+	transform: translate(-2.04em);
 	transition: background 0.5s;
-}
-
-body.collapse-header header.darya .circle h1 {
-	background: #6B4E8A;
 }
 
 header.darya h1, header.darya h2 {
@@ -78,17 +56,14 @@ header.darya h1, header.darya h2 {
 }
 
 header.darya h1 {
-	width: 4em;
-	height: 4em;
-	margin-top: 0;
+	margin-top: 1em;
 	margin-left: auto;
 	margin-right: auto;
-	margin-bottom: 0;
+	margin-bottom: 1em;
 	padding-left: 0.15em;
 	font-weight: 700;
 	font-size: 4.5em;
 	color: #fff;
-	line-height: 3.8em;
 	letter-spacing: 0.2em;
 	text-align: center;
 }
@@ -97,8 +72,8 @@ header.darya h2 {
 	/*color: #926fb6;*/
 	/*color: #412A5A;*/
 	/*color: #e2d8ec;*/
+	font-size: 1.8em;
 	color: #fff;
-	margin-top: -1.1em;
 	margin-bottom: 1em;
 	
 }
@@ -143,10 +118,34 @@ header.darya .logo span.alternate {
 	transition: color 0.5s;
 }
 
-body.collapse-header header.darya .logo span.alternate {
-	color: #6B4E8A;
-}
-
 .hljs {
 	padding: 0.5em 2.3em;
+}
+
+/**
+ * 	Collapsify!
+ */
+
+body.collapse-header header.darya .circle {
+	background: #6B4E8A;
+}
+
+body.collapse-header .navbar.darya {
+	/*margin-top: -6em;*/
+	position: fixed;
+	background: #fff;
+	transform: translate(0, -12em);
+}
+
+body.collapse-header header.darya {
+	/*margin-bottom: -8.1em;*/
+	transform: translate(0, 7.5em);
+}
+
+body.collapse-header .content {
+	margin-top: 12em;
+}
+
+body.collapse-header header.darya .logo span.alternate {
+	color: #6B4E8A;
 }
