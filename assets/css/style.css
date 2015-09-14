@@ -1,0 +1,152 @@
+body {
+	font-family: "Open Sans", sans-serif;
+	transition: padding-top 0.5s;
+	font-size: 16px;
+}
+
+h4 {
+	margin-top: 16px;
+}
+
+body.collapse-header .navbar.darya {
+	/*margin-top: -6em;*/
+	position: fixed;
+	background: #fff;
+	transform: translate(0, -6em);
+}
+
+body.collapse-header header.darya {
+	margin-bottom: -8.1em;
+}
+
+body.collapse-header .content {
+	margin-top: 14em;
+}
+
+.content {
+	margin-top: 20em;
+	transition: margin-top 0.5s;
+}
+
+.navbar.darya {
+	transition: margin-top 0.5s, height 0.5s, background 0.5s, transform 0.5s;
+	background: #6B4E8A;
+	/*margin-top: 0em;*/
+	overflow: hidden;
+	position: fixed;
+	border-radius: 0;
+	border: none;
+	width: 100%;
+	top: 0;
+}
+
+header.darya {
+	transition: margin-bottom 0.5s;
+	margin-bottom: 0em;
+}
+
+header.darya .logo {
+	position: relative;
+	z-index: 1;
+}
+
+header.darya .circle {
+	top: 4em;
+	position: absolute;
+	left: 50%;
+	/*margin-left: -5.5em;*/
+	margin-bottom 0em;
+	transform: translate(-5.05em);
+	z-index: -1;
+}
+
+header.darya .circle h1 {
+	color: transparent;
+	border-radius: 50%;
+	background: #5C3F7B;
+	font-size: 2.5em;
+	transition: background 0.5s;
+}
+
+body.collapse-header header.darya .circle h1 {
+	background: #6B4E8A;
+}
+
+header.darya h1, header.darya h2 {
+	font-family: Comfortaa, sans-serif;
+	text-transform: lowercase;
+}
+
+header.darya h1 {
+	width: 4em;
+	height: 4em;
+	margin-top: 0;
+	margin-left: auto;
+	margin-right: auto;
+	margin-bottom: 0;
+	padding-left: 0.15em;
+	font-weight: 700;
+	font-size: 4.5em;
+	color: #fff;
+	line-height: 3.8em;
+	letter-spacing: 0.2em;
+	text-align: center;
+}
+
+header.darya h2 {
+	/*color: #926fb6;*/
+	/*color: #412A5A;*/
+	/*color: #e2d8ec;*/
+	color: #fff;
+	margin-top: -1.1em;
+	margin-bottom: 1em;
+	
+}
+
+footer.darya {
+	min-height: 10em;
+	background: #2d2d2d;
+	padding-top: 2em;
+	text-align: center;
+	color: #555;
+}
+
+footer.darya a {
+	color: #555;
+}
+
+footer.darya a:hover {
+	color: #777;
+}
+
+footer.darya .fa {
+	font-size: 3em;
+}
+
+pre.example {
+	border: none;
+	background: none;
+	padding: 0;
+}
+
+pre code {
+	white-space: pre;
+	overflow-x: auto;
+}
+
+code {
+	font-family: "Droid Sans Mono", Menlo, Monaco, Consolas, "Courier New", monospace;
+}
+
+header.darya .logo span.alternate {
+	color: #fff;
+	transition: color 0.5s;
+}
+
+body.collapse-header header.darya .logo span.alternate {
+	color: #6B4E8A;
+}
+
+.hljs {
+	padding: 0.5em 2.3em;
+}
