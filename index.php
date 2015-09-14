@@ -167,7 +167,8 @@ $results = $dispatcher->dispatch('some_event', 'thing'); // array('one thing', '
 
 			<footer class="darya">
 				<div class="container">
-					<p><a target="_blank" href="https://github.com/darya/framework"><span class="fa fa-github"></span></a></p>
+					<p class="badges"><a target="_blank" href="https://github.com/darya/framework"><span class="fa fa-github"></span></a></p>
+					<p>Copright &copy; 2015</p>
 				</div>
 			</footer>
 		</div>

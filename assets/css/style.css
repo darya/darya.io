@@ -15,11 +15,12 @@ h4 {
 
 .navbar.darya {
 	transition: margin-top 0.5s, height 0.5s, background 0.5s, transform 0.5s;
+	box-shadow: 0 0 12px rgba(30, 30, 30, 0.2);
 	background: #6B4E8A;
-	/*margin-top: 0em;*/
 	overflow: hidden;
 	position: fixed;
 	border-radius: 0;
+	z-index: 1;
 	border: none;
 	width: 100%;
 	top: 0;
@@ -53,6 +54,7 @@ header.darya .circle {
 header.darya h1, header.darya h2 {
 	font-family: Comfortaa, sans-serif;
 	text-transform: lowercase;
+	color: #fff;
 }
 
 header.darya h1 {
@@ -61,21 +63,21 @@ header.darya h1 {
 	margin-right: auto;
 	margin-bottom: 1em;
 	padding-left: 0.15em;
-	font-weight: 700;
 	font-size: 4.5em;
-	color: #fff;
+	font-weight: 700;
 	letter-spacing: 0.2em;
 	text-align: center;
 }
 
 header.darya h2 {
-	/*color: #926fb6;*/
-	/*color: #412A5A;*/
-	/*color: #e2d8ec;*/
 	font-size: 1.8em;
-	color: #fff;
 	margin-bottom: 1em;
 	
+}
+
+div.content {
+	transition: margin-top 0.5s;
+	z-index: -1;
 }
 
 footer.darya {
@@ -142,8 +144,9 @@ body.collapse-header header.darya {
 	transform: translate(0, 7.5em);
 }
 
-body.collapse-header .content {
+body.collapse-header div.content {
 	margin-top: 12em;
+	/*transform: translate(0, -8em);*/
 }
 
 body.collapse-header header.darya .logo span.alternate {
