@@ -1,7 +1,12 @@
 body {
 	font-family: "Open Sans", sans-serif;
-	transition: padding-top 0.5s;
 	font-size: 16px;
+}
+
+@media screen and (max-width: 768px) {
+	body {
+		font-size: 12px;
+	}
 }
 
 h4 {
@@ -40,9 +45,9 @@ header.darya .circle {
 	left: 50%;
 	width: 4em;
 	height: 4em;
-	top: -0.8em;
+	top: -0.85em;
 	z-index: -1;
-	font-size: 2.5em;
+	font-size: 2.55em;
 	margin-bottom 0em;
 	position: absolute;
 	border-radius: 50%;
@@ -104,6 +109,7 @@ pre.example {
 	border: none;
 	background: none;
 	padding: 0;
+	word-wrap: normal;
 }
 
 pre code {
