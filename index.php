@@ -52,10 +52,10 @@ $container = new Container;
 
 // Register a couple of services
 $container->register(array(
-	'App\FooInterface' => new App\ConcreteFoo,
-	'App\BarInterface' => function (Container $container) {
-		return new App\ConcreteBar($container->foo);
-	}
+    'App\FooInterface' => new App\ConcreteFoo,
+    'App\BarInterface' => function (Container $container) {
+        return new App\ConcreteBar($container->foo);
+    }
 ));
 
 // Register aliases for them
@@ -168,7 +168,7 @@ $results = $dispatcher->dispatch('some_event', 'thing'); // array('one thing', '
 			<footer class="darya">
 				<div class="container">
 					<p class="badges"><a target="_blank" href="https://github.com/darya/framework"><span class="fa fa-github"></span></a></p>
-					<p>Copright &copy; 2015</p>
+					<p>Copright &copy; Chris Andrew 2015</p>
 				</div>
 			</footer>
 		</div>
