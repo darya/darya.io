@@ -109,9 +109,10 @@ $response->send();
 				
 				<h4>Cookies</h4>
 				<pre class="example"><code class="php">
-$response->cookies->set('key', 'value', strtotime('+1 day', time()));
+$response->cookies->set('key', 'value', '+1 day');
 
 $cookie = $response->cookies->get('key'); // 'value'
+$cookie = $response->cookies->get('key', 'expire'); // strtotime('+1 day')
 
 $response->cookies->delete('key');
 				</code></pre>
